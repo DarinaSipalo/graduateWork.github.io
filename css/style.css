@@ -1,0 +1,352 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin,cyrillic);
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+}
+a{
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: .3s;
+}
+a:hover{
+    color: #00e0d0;
+}
+ /*меню*/
+*{box-sizing: border-box;}
+nav {
+    background: none;
+    box-shadow: 0 2px 0 0 #ECF1F2;
+    border-top: 1px solid #ECF1F2;
+    text-align: center;
+}
+nav a {
+    text-decoration: none;
+    display: block;
+    transition: .3s linear;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topmenu > li {
+    display: inline-block;
+    position: relative;
+    margin-right: -4px;
+    border-left: 1px solid #ECF1F2;
+}
+.topmenu > li:last-child {border-right: 1px solid #ECF1F2;}
+.topmenu > li > a {
+    font-weight: bold;
+    padding: 20px 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+}
+.active:after, .submenu-link:after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    color: inherit;
+    margin-left: 10px;
+}
+.topmenu .active, .topmenu > li > a:hover, .submenu li a:hover {color: #ddbe86;}
+.submenu {
+    position: absolute;
+    left: -1px;
+    z-index: 5;
+    width: 240px;
+    border-bottom: 1px solid #ECF1F2;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: .3s ease-in-out;
+}
+.submenu li {position: relative;}
+.submenu a {
+    background: white;
+    border-top: 1px solid #ECF1F2;
+    border-right: 1px solid #ECF1F2;
+    border-left: 1px solid #ECF1F2;
+    color: #1c1c1c;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+}
+.submenu .submenu {
+    position: absolute;
+    top: 0;
+    left: calc(100% - 1px);
+    left: -webkit-calc(100% - 1px);
+}
+nav li:hover > .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+
+
+.mainHeader{
+    background-image: url(mainBg.jpg);
+   /* background: black;*/
+    margin: auto auto;
+    /*opacity: 0.8;*/
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    /*margin-right: 20px;*/
+}
+.header__icon{
+    display: flex;
+    margin: 30px;
+    /*justify-content: center;*/
+}
+.header__icon__text{
+    margin: auto 0;
+    font-family: Roboto;
+    background: linear-gradient(#136a91, #00e0d0);
+    -webkit-background-clip: text;  /* подробнее про background-clip */
+    color: transparent;
+    font-size: 40px;
+}
+.header__icon__image{
+    margin-right: 20px;
+}
+.header__menu{
+    margin: 50px;
+}
+.mainHeader__main{
+    margin: 50px auto 0;
+}
+.main__title{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+
+}
+.title__text{
+    font-size: 50px;
+    font-family: Roboto;
+    font-weight: bold;
+    color: white;
+    opacity: 0.8;
+}
+.lineUnderMainTitle{
+    width: 50px;
+    height: 1px;
+    margin: 0 auto;
+    background: #00e0d0;
+}
+.main__content{
+    margin: 0 auto 20px;
+    text-align: left;
+    padding: 20px;
+    max-width: 900px;
+    line-height: 1.5;
+}
+.content__text{
+    text-align: left;
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 60px;
+    font-width: bold;
+    margin-bottom: 60px;
+}
+
+
+.ourStory{
+    background-image: url(cont.jpg);
+    margin: auto auto;
+    opacity: 0.8;
+}
+.mainOurStory-header{
+    margin: 80px auto;
+    max-width: 900px;
+    /*display: flex;*/
+}
+.mainOurStory__icon{
+    margin-right: 40px;
+}
+.OurStory__icon{
+}
+.mainOurStory__title{
+    margin: 50px auto 0;
+}
+.mainDescription__title{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+.description__title{
+    font-size: 45px;
+    font-family: Roboto;
+    font-weight: bold;
+    color: black;
+    opacity: 0.6;
+}
+.description__content{
+    margin: 0 auto 20px;
+    text-align: center;
+    padding: 20px;
+    max-width: 900px;
+    line-height: 1.5;
+}
+.description__text{
+    text-align: left;
+    color: black;
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    font-width: bold;
+    margin-bottom: 60px;
+}
+.mainOurStory{
+    margin: 30px auto;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-around;
+}
+.mainOurStory-description__title{
+    font-size: 50px;
+    font-family: Playfair Display;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0.4;
+    margin: 0 0 20px 0;
+}
+
+.mainOurStory-description{
+}
+.mainOurStory-description__text{
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    color: black;
+    opacity: 0.9;
+}
+
+
+
+
+/* Базовые стили слоя затемнения и модального окна  */
+.overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    visibility: hidden;
+    /* фон затемнения */
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    position: fixed; /* фиксированное поцизионирование */
+    cursor: default; /* тип курсара */
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+/* стили модального окна */
+.popup {
+    top: 0;
+    right: 0;
+    left: 50%;
+    font-size: 14px;
+    font-family: 'Tahoma', Arial, sans-serif;
+    z-index: 10000;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 320px;
+    max-width: 820px;
+    /* фиксированное позиционирование, окно стабильно при прокрутке */
+    position: fixed;
+    padding: 15px;
+    border: 1px solid #383838;
+    /* скругление углов */
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    /* внешняя тень */
+    -webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -ms-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -o-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    /* трансформация */
+    -webkit-transform: translate(-50%, -150%);
+    -ms-transform: translate(-50%, -150%);
+    -o-transform: translate(-50%, -150%);
+    transform: translate(-50%, -150%);
+}
+/* активируем мод. окно */
+.overlay:target+.popup {
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* анимируем трансформацию */
+    -webkit-transition: transform 0.6s ease-out;
+    -moz-transition: transform 0.6s ease-out;
+    -ms-transition: transform 0.6s ease-out;
+    -o-transition: transform 0.6s ease-out;
+    transition: transform 0.6s ease-out;
+}
+/* формируем кнопку закрытия */
+.close {
+    position: absolute;
+    padding: 0;
+    top: -10px;
+    right: -10px;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgba(61, 61, 61, 0.8);
+    -webkit-box-shadow: 0px 0px 10px #000;
+    -moz-box-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 10px #000;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 20px;
+    -webkit-transition: all ease .8s;
+    -moz-transition: all ease .8s;
+    -ms-transition: all ease .8s;
+    -o-transition: all ease .8s;
+    transition: all ease .8s;
+}
+.close:before {
+    color: rgba(255, 255, 255, 0.9);
+    content: '\2715';
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+    font-size: 12px;
+}
+.close:hover {
+    background-color: rgba(252, 20, 0, 0.8);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}

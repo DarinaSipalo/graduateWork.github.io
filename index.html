@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="test1/jquery1.min.js"></script> <!--відповідає за завантаженнЯ тесту-->
+    <!--<script src="jquery-ui.js"></script>-->
+    <script src="test1/highcharts-custom1.js"></script><!--графічне відображення оцінки-->
+    <script src="test1/main1.js"></script>
+    <script src="test1/test1.js"></script>
+    <link href="test1/styles.11c953f07d72094a2b3d1.bundle.css" rel="stylesheet"/>
+
+
+  <!-- <script src="test2/jquery.min2.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="test2/highcharts-custom2.js"></script>
+    <script src="test2/main2.js"></script>
+    <script src="test2/test2.js"></script>
+    <link href="test2/styles.11c953f07d72094a2b3d2.bundle.css" rel="stylesheet"/>-->
+</head>
+<body>
+
+<div class="mainHeader">
+    <div class="header">
+        <div class="header__menu">
+            <nav>
+                <ul class="topmenu">
+                    <li><a href="">Головна</a></li>
+                    <li><a href="" class="active">Освіта</a>
+                        <ul class="submenu">
+                            <li><a href="" class="submenu-link">Лекції</a>
+                                <ul class="submenu">
+                                    <li><a href="" class="submenu-link">Організація комп'ютерних мереж</a>
+                                        <ul class="submenu">
+                                            <li><a href="#lokm1" title="Комп'ютерні мережі: історія розвитку, класифікація, архітектура">Лекція 1</a></li>
+                                            <li><a href="#lokm2" title="Основи побудови комп'ютерних мереж (КМ)">Лекція 2</a></li>
+                                            <li><a href="#lokm3" title="Технологія локальної мережі Ethernet">Лекція 3</a></li>
+                                            <li><a href="#lokm4" title="Комутація у корпоративної мережі.">Лекція 4</a></li>
+                                            <li><a href="#lokm5" title="Cisco IOS">Лекція 5</a></li>
+                                            <li><a href="#lokm6" title="Бездротові комп'ютерні мережі ">Лекція 6</a></li>
+                                            <li><a href="#lokm7" title="Канальний рівень">Лекція 7</a></li>
+                                            <li><a href="#lokm9" title="Прокол ІР. Адресування комп'ютерів в мережі.">Лекція 9</a></li>
+                                            <li><a href="#lokm10" title="Маска підмережі змінної довжини(Variable Length Subnet Mask)">Лекція 10</a></li>
+                                            <li><a href="#lokm101" title="Маска підмережі. ">Лекція 10.1</a></li>
+                                            <li><a href="#lokm11" title="Проектування корпоративної комп’ютерної мережі">Лекція 11</a></li>
+                                            <li><a href="#lokm12" title="Маршрутизація в корпоративних мережах">Лекція 12</a></li>
+                                            <li><a href="#lokm13" title="Протокол RIP (Routing Information Protocol)">Лекція 13</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">Програмування для мобільних пристроїв</a>
+                                        <ul class="submenu">
+                                            <li><a href="">Лекція 1</a></li>
+                                            <li><a href="">Лекція 2</a></li>
+                                            <li><a href="">Лекція 3</a></li>
+                                        </ul></li>
+                                    <li><a href="">С/С++</a>
+                                        <ul class="submenu">
+                                            <li><a href="">Лекція 1</a></li>
+                                            <li><a href="">Лекція 2</a></li>
+                                            <li><a href="">Лекція 3</a></li>
+                                        </ul></li></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="submenu-link">Тести</a>
+                                <ul class="submenu">
+                                    <li><a href="">Організація комп'ютерних мереж</a>
+                                        <ul class="submenu">
+                                            <li><a href="#tokm1" title="Комп'ютерні мережі: історія розвитку, класифікація, архітектура">Тест 1</a></li>
+                                            <li><a href="#tokm2" title="Основи побудови комп'ютерних мереж (КМ)">Тест 2</a></li>
+                                            <li><a href="#tokm3" title="Технологія локальної мережі Ethernet">Тест 3</a></li>
+                                            <li><a href="#tokm4" title="Комутація у корпоративної мережі.">Тесt 4</a></li>
+                                            <li><a href="#tokm5" title="Cisco IOS">Тест 5</a></li>
+                                            <li><a href="#tokm6" title="Бездротові комп'ютерні мережі ">Тест 6</a></li>
+                                            <li><a href="#tokm7" title="Канальний рівень">Тест 7</a></li>
+                                            <li><a href="#tokm9" title="Прокол ІР. Адресування комп'ютерів в мережі.">Тест 9</a></li>
+                                            <li><a href="#tokm10" title="Маска підмережі змінної довжини(Variable Length Subnet Mask)">Тест 10</a></li>
+                                            <li><a href="#tokm101" title="Маска підмережі. ">Тест 10.1</a></li>
+                                            <li><a href="#tokm11" title="Проектування корпоративної комп’ютерної мережі">Тест 11</a></li>
+                                            <li><a href="#tokm12" title="Маршрутизація в корпоративних мережах">Тест 12</a></li>
+                                            <li><a href="#tokm13" title="Протокол RIP (Routing Information Protocol)">Тест 13</a></li>
+                                        </ul></li></li>
+                                    <li><a href="">Програмування для мобільних пристроїв</a></li>
+                                    <li><a href="">С/С++</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="submenu-link">Презентації</a>
+                                <ul class="submenu">
+                                    <li><a href="">Організація комп'ютерних мереж</a></li>
+                                    <li><a href="">Програмування для мобільних пристроїв</a></li>
+                                    <li><a href="">С/С++</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                </li>
+                    <li><a href="">Контакти</a></li>
+                </ul>
+            </nav>
+
+            <!--Лекции-->
+            <!-- Модальное окно 1 -->
+            <a href="#x" class="overlay" id="lokm1"></a>
+            <div class="popup">
+                <embed src="css/L-1.pdf" width="800" height="600"/>
+                <a class="close" title="Закрыть" href="#close"></a>
+            </div>
+
+            <!-- Модальное окно 2 -->
+            <a href="#x" class="overlay" id="lokm2"></a>
+            <div class="popup">
+                <embed src="css/L-2.1.pdf" width="800" height="600"/>
+                <a class="close" title="Закрыть" href="#close"></a>
+            </div>
+            <!-- Модальное окно 3 -->
+            <a href="#x" class="overlay" id="lokm3"></a>
+            <div class="popup">
+                <embed src="css/L-3.pdf" width="800" height="600"/>
+                <a class="close" title="Закрыть" href="#close"></a>
+            </div>
+            <!-- Модальное окно 4 -->
+            <a href="#x" class="overlay" id="lokm4"></a>
+            <div class="popup">
+                <embed src="css/L-4.pdf" width="800" height="600"/>
+                <a class="close" title="Закрыть" href="#close"></a>
+            </div>
+            <!-- Модальное окно 5 -->
+            <a href="#x" class="overlay" id="lokm5"></a>
+            <div class="popup">
+                <embed src="css/L-5.pdf" width="800" height="600"/>
+                <a class="close" title="Закрыть" href="#close"></a>
+            </div>
+            <!-- Модальное окно 6 -->
+            <a href="#x" class="overlay" id="lokm6"></a>
+            <div class="popup">
+                <embed src="css/L-6.pdf" width="800" height="600"/>
+                <a class="close" title="Закрыть" href="#close"></a>
+            </div>
+            <!-- Модальное окно 7 -->
+            <a href="#x" class="overlay" id="lokm7"></a>
+            <div class="popup">
+                <embed src="css/L-7.pdf" width="800" height="600"/>
+                <a class="close" title="Закрыть" href="#close"></a>
+            </div>
+            <!-- Модальное окно 9 -->
+            <a href="#x" class="overlay" id="lokm9"></a>
+            <div class="popup">
+                <embed src="css/L-9.pdf" width="800" height="600"/>
+                <a class="close" title="Закрыть" href="#close"></a>
+            </div>
+            <!-- Модальное окно 10 -->
+            <a href="#x" class="overlay" id="lokm10"></a>
+            <div class="popup">
+                <embed src="css/L-10.pdf" width="800" height="600"/>
+                <a class="close" title="Закрыть" href="#close"></a>
+            </div>
+            <!-- Модальное окно 10.1 -->
+            <a href="#x" class="overlay" id="lokm101"></a>
+            <div class="popup">
+                <embed src="css/Додаткова%2010%20лекція.pdf" width="800" height="600"/>
+                <a class="close" title="Закрыть" href="#close"></a>
+            </div>
+            <!-- Модальное окно 11 -->
+            <a href="#x" class="overlay" id="lokm11"></a>
+            <div class="popup">
+                <embed src="css/L-11.pdf" width="800" height="600"/>
+                <a class="close" title="Закрыть" href="#close"></a>
+            </div>
+            <!-- Модальное окно 12 -->
+            <a href="#x" class="overlay" id="lokm12"></a>
+            <div class="popup">
+                <embed src="css/L-12.pdf" width="800" height="600"/>
+                <a class="close" title="Закрыть" href="#close"></a>
+            </div>
+            <!-- Модальное окно 13 -->
+            <a href="#x" class="overlay" id="lokm13"></a>
+            <div class="popup">
+                <embed src="css/L-13.pdf" width="800" height="600"/>
+                <a class="close" title="Закрыть" href="#close"></a>
+            </div>
+
+
+            <!--Тесты-->
+            <!-- Модальное окно 1 -->
+            <a href="#x" class="overlay" id="tokm1"></a>
+            <div class="popup">
+                <script>document.write('<base href="' + document.location + '" />');</script>
+                <script>
+                </script>
+                <app-root>Loading...</app-root>
+                <counters></counters>
+                <a class="close" title="Закрыть" href="#close"></a>
+            </div>
+
+            <!-- Модальное окно 2-->
+          <!--  <a href="#x" class="overlay" id="tokm2"></a>
+            <div class="popup">
+                <script>document.write('<base href="' + document.location + '" />');</script>
+                <script>
+                </script>
+                <app-root>Loading...</app-root>
+                <counters></counters>
+                <a class="close" title="Закрыть" href="#close"></a>
+            </div>-->
+        </div>
+    </div>
+    <div class="mainHeader__main">
+        <div class="main__title">
+            <p class="title__text">ПРО ДОДАТОК</p>
+        </div>
+        <div class="main__content">
+            <p class="content__text">Додаток для перевірки знань.
+            Полегшує роботу та покращує знання.</p>
+        </div>
+    </div>
+</div>
+
+<div class="ourStory">
+    <div class="mainOurStory-header">
+        <div class="mainOurStory__title">
+            <div class="mainDescription__title">
+        <p class="description__title">В чому сила додатку?</p>
+            </div>
+            <div class="description__content">
+        <p class="description__text">
+            Тестовий контроль використовують з метою актуалізації знань
+            перед викладанням нової теми, виведенням підсумкових оцінок,
+            на групових заняттях, на заліку чи іспиті, а також перед
+            практичними і лабораторними роботами. Такий вид контролю дає змогу ефективніше використовувати час,
+            ставить перед усіма студентами однакові вимоги, допомагає уникати
+            надмірних хвилювань. Тестова перевірка унеможливлює випадковість
+            в оцінюванні знань, стимулює студентів до самоконтролю.</p>
+            </div>
+        </div>
+        <p class="mainOurStory-description__title">Актуальність<br><br></p>
+        <div class="mainOurStory">
+        <div class="mainOurStory__icon">
+            <img class="OurStory__icon" src="css/prof-test.png" height="230" width="400"/>
+        </div>
+        <ul class="mainOurStory-description__text" type="disc">
+            Практика показала наступні переваги тестування над іншими формами контролю знань:<br>
+            <li>упродовж досить обмеженого часу може бути перевірена якість знань, навичок у зазначеної кількості студентів;</li>
+            <li>можливий контроль знань, умінь, навичок на необхідному, заздалегідь запланованому рівні;</li>
+            <li>реальним є самоконтроль;</li>
+            <li>знання оцінюють більш-менш об’єктивно;</li>
+            <li>увага студента фіксується не на формуванні відповіді, а не осмисленні її суті;</li>
+            <li>створюють умови для постійного зворотного зв’язку між студентом і викладачем.</li>
+
+        </ul>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="test1/inline.7eb10a904b1b1c261b0a1.bundle.js"></script>
+<script type="text/javascript" src="test1/vendor1.32ea46cae84d01386984.bundle.js"></script>
+<script type="text/javascript" src="test1/main.d56b2284568505c9e5e01.bundle.js"></script>
+
+<!--<script type="text/javascript" src="test2/inline.7eb10a904b1b1c261b0a2.bundle.js"></script>
+<script type="text/javascript" src="test2/vendor.32ea46cae84d013869842.bundle.js"></script>
+<script type="text/javascript" src="test2/main.d56b2284568505c9e5e02.bundle.js"></script>-->
+
+</body>
+</html>
